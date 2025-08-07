@@ -8,29 +8,32 @@ body {
 }
 .main {
   flex: 1;
-    width: 80%; /* Or any specific width */
+  width: 80%; /* Or any specific width */
   margin: 0 auto; /* Top/bottom margin 0, left/right auto */
 }
 
 h1 {
   font-size: 5rem;
-  margin: 0;
-  display: block;
-    border: 4px dotted blue;
+  border: 4px dotted blue;
 
 }
-
-body> div> h1> h1> .creative-title{
-  color: blueviolet;
-}
-
-
-
 
 footer {
   text-align: right;
   color: midnightblue;
   float: right;
+}
+
+.creative-title{
+  color: blue;
+  
+}
+
+
+.tile-image{
+  float: left;
+  height: 200px;
+  margin-right: 50px;
 }
 
 
@@ -42,85 +45,69 @@ h2{
 
 }
 
-.right.card{
-  float: right;
-  display: inline;
-  border: 4px dotted blue;
-  width: 600px;
+.card{
+    width: 45%;
+
 }
 
 .left.card{
   float: left;
-  display: inline;
    border: 4px dotted blue;
-     width: 600px;
 
 }
-
-.card.text{
-  display: inline-block;
-
-}
-
-
-
-img{
-  float: left;
+.right.card{
+  float: right;
+  border: 4px dotted blue;
 }
 
 /*small screen*/
-@media (max-width: 1634px){
+@media (max-width: 634px){
   body{
     justify-content: center;
     background-color: lightsalmon;
 
+  .logo{
+  display:block;
+  width: 100px;
+
+  }
+
     .main {
-      flex: 1; 
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* Centers items vertically */
-      justify-content: center;
-      height: 100vh;
+
       border: 4px dotted yellow;
 
     }
     h1{
-        font-size: 4rem;
-        display: flex;
-        align-items: center;
+        font-size: 2rem;
+        text-align: center;
     }
 
-    h2{
-      display: block;
-    }
-
-    .card.text{
-      display: block;
-      justify-content: center;
-    }
-
+ 
     .card{
-      align-items: center; /* Centers items vertically */
+  
       display: block;
-          width: 100%; 
+      width: 100%; 
+     margin-bottom: 30px;
+    text-align: justify;
     }
 
-    img { 
+
+
+     .card img { 
       width: 90%; 
+      margin-bottom: 10px;
+      display: inline;
+      object-fit: cover;
     }
 
-    .logo{
-  display:block;
-  width: 150px;
 
-}
 
   }
 
 }
 
 /*computer screen*/
-@media (min-width: 1635px){
+@media (min-width: 635px){
   body{
       background-color: seagreen;
     img { 
